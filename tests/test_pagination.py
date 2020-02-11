@@ -2,10 +2,11 @@
 from __future__ import unicode_literals
 
 import pytest
+import six
+
 from django.core.paginator import Paginator as DjangoPaginator
 from django.db import models
 from django.test import TestCase
-from django.utils import six
 
 from rest_framework import (
     exceptions, filters, generics, pagination, serializers, status

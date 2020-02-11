@@ -1,11 +1,12 @@
 from __future__ import unicode_literals
 
 import pytest
+import six
+
 from django.conf.urls import url
 from django.core.management import call_command
 from django.test import TestCase
 from django.test.utils import override_settings
-from django.utils import six
 
 from rest_framework.compat import coreapi
 from rest_framework.utils import formatting, json

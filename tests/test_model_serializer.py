@@ -9,6 +9,7 @@ from __future__ import unicode_literals
 
 import datetime
 import decimal
+import six
 import sys
 from collections import OrderedDict
 
@@ -20,7 +21,6 @@ from django.core.validators import (
 )
 from django.db import models
 from django.test import TestCase
-from django.utils import six
 
 from rest_framework import serializers
 from rest_framework.compat import postgres_fields, unicode_repr

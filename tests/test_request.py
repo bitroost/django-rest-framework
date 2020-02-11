@@ -4,6 +4,7 @@ Tests for content parsing, and form-overloaded content parsing.
 from __future__ import unicode_literals
 
 import os.path
+import six
 import tempfile
 
 import pytest
@@ -15,7 +16,6 @@ from django.contrib.sessions.middleware import SessionMiddleware
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.http.request import RawPostDataException
 from django.test import TestCase, override_settings
-from django.utils import six
 
 from rest_framework import status
 from rest_framework.authentication import SessionAuthentication

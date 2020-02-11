@@ -5,6 +5,7 @@ returned by list views.
 from __future__ import unicode_literals
 
 import operator
+import six
 import warnings
 from functools import reduce
 
@@ -13,7 +14,6 @@ from django.db import models
 from django.db.models.constants import LOOKUP_SEP
 from django.db.models.sql.constants import ORDER_PATTERN
 from django.template import loader
-from django.utils import six
 from django.utils.encoding import force_text
 from django.utils.translation import ugettext_lazy as _
 

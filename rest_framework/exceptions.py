@@ -7,9 +7,9 @@ In addition Django's built in 403 and 404 exceptions are handled.
 from __future__ import unicode_literals
 
 import math
+import six
 
 from django.http import JsonResponse
-from django.utils import six
 from django.utils.encoding import force_text
 from django.utils.translation import ugettext_lazy as _
 from django.utils.translation import ungettext

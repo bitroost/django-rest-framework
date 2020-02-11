@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 import re
+import six
 from collections import OrderedDict
 
 import pytest
@@ -11,7 +12,6 @@ from django.db import models
 from django.http.request import HttpRequest
 from django.template import loader
 from django.test import TestCase, override_settings
-from django.utils import six
 from django.utils.safestring import SafeText
 from django.utils.translation import ugettext_lazy as _
 

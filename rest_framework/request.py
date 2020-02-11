@@ -11,6 +11,7 @@ The wrapped request then offers a richer API, in particular :
 from __future__ import unicode_literals
 
 import io
+import six
 import sys
 from contextlib import contextmanager
 
@@ -18,7 +19,6 @@ from django.conf import settings
 from django.http import HttpRequest, QueryDict
 from django.http.multipartparser import parse_header
 from django.http.request import RawPostDataException
-from django.utils import six
 from django.utils.datastructures import MultiValueDict
 
 from rest_framework import HTTP_HEADER_ENCODING, exceptions

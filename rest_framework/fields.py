@@ -6,6 +6,7 @@ import decimal
 import functools
 import inspect
 import re
+import six
 import uuid
 from collections import OrderedDict
 
@@ -17,7 +18,7 @@ from django.core.validators import (
 )
 from django.forms import FilePathField as DjangoFilePathField
 from django.forms import ImageField as DjangoImageField
-from django.utils import six, timezone
+from django.utils import timezone
 from django.utils.dateparse import (
     parse_date, parse_datetime, parse_duration, parse_time
 )

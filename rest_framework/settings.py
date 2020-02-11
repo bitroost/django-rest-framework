@@ -20,11 +20,11 @@ back to the defaults.
 """
 from __future__ import unicode_literals
 
+import six
 from importlib import import_module
 
 from django.conf import settings
 from django.test.signals import setting_changed
-from django.utils import six
 
 from rest_framework import ISO_8601
 

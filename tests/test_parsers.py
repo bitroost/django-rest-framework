@@ -11,7 +11,7 @@ from django.core.files.uploadhandler import (
 )
 from django.http.request import RawPostDataException
 from django.test import TestCase
-from django.utils.six import StringIO
+from six import StringIO
 
 from rest_framework.exceptions import ParseError
 from rest_framework.parsers import (

@@ -6,10 +6,11 @@ from __future__ import absolute_import, unicode_literals
 import datetime
 import decimal
 import json  # noqa
+import six
 import uuid
 
 from django.db.models.query import QuerySet
-from django.utils import six, timezone
+from django.utils import timezone
 from django.utils.encoding import force_text
 from django.utils.functional import Promise
 

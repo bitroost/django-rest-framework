@@ -5,11 +5,11 @@ versions of Django/Python, and compatibility wrappers around optional packages.
 
 from __future__ import unicode_literals
 
+import six
 import sys
 
 from django.conf import settings
 from django.core import validators
-from django.utils import six
 from django.views.generic import View
 
 try:

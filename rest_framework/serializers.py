@@ -14,6 +14,7 @@ from __future__ import unicode_literals
 
 import copy
 import inspect
+import six
 import traceback
 from collections import OrderedDict
 
@@ -23,7 +24,7 @@ from django.db import models
 from django.db.models import DurationField as ModelDurationField
 from django.db.models.fields import Field as DjangoModelField
 from django.db.models.fields import FieldDoesNotExist
-from django.utils import six, timezone
+from django.utils import timezone
 from django.utils.functional import cached_property
 from django.utils.translation import ugettext_lazy as _
 

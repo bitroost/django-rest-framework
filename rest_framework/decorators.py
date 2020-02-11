@@ -8,11 +8,11 @@ used to annotate methods on viewsets that should be included by routers.
 """
 from __future__ import unicode_literals
 
+import six
 import types
 import warnings
 
 from django.forms.utils import pretty_name
-from django.utils import six
 
 from rest_framework import RemovedInDRF310Warning
 from rest_framework.views import APIView

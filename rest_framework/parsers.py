@@ -7,6 +7,7 @@ on the request, such as form content or json encoded data.
 from __future__ import unicode_literals
 
 import codecs
+import six
 
 from django.conf import settings
 from django.core.files.uploadhandler import StopFutureHandlers
@@ -15,9 +16,8 @@ from django.http.multipartparser import ChunkIter
 from django.http.multipartparser import \
     MultiPartParser as DjangoMultiPartParser
 from django.http.multipartparser import MultiPartParserError, parse_header
-from django.utils import six
 from django.utils.encoding import force_text
-from django.utils.six.moves.urllib import parse as urlparse
+from six.moves.urllib import parse as urlparse
 
 from rest_framework import renderers
 from rest_framework.exceptions import ParseError

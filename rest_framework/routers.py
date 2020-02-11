@@ -16,13 +16,13 @@ For example, you might have a `urls.py` that looks something like this:
 from __future__ import unicode_literals
 
 import itertools
+import six
 import warnings
 from collections import OrderedDict, namedtuple
 
 from django.conf.urls import url
 from django.core.exceptions import ImproperlyConfigured
 from django.urls import NoReverseMatch
-from django.utils import six
 from django.utils.deprecation import RenameMethodsBase
 
 from rest_framework import (

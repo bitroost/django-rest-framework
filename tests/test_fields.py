@@ -1,6 +1,7 @@
 import datetime
 import os
 import re
+import six
 import unittest
 import uuid
 from decimal import ROUND_DOWN, ROUND_UP, Decimal
@@ -10,7 +11,6 @@ import pytz
 from django.core.exceptions import ValidationError as DjangoValidationError
 from django.http import QueryDict
 from django.test import TestCase, override_settings
-from django.utils import six
 from django.utils.timezone import activate, deactivate, override, utc
 
 import rest_framework

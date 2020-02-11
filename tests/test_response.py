@@ -1,8 +1,9 @@
 from __future__ import unicode_literals
 
+import six
+
 from django.conf.urls import include, url
 from django.test import TestCase, override_settings
-from django.utils import six
 
 from rest_framework import generics, routers, serializers, status, viewsets
 from rest_framework.parsers import JSONParser

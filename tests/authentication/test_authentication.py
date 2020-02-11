@@ -3,6 +3,7 @@
 from __future__ import unicode_literals
 
 import base64
+import six
 
 import pytest
 from django.conf import settings
@@ -10,7 +11,6 @@ from django.conf.urls import include, url
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.test import TestCase, override_settings
-from django.utils import six
 
 from rest_framework import (
     HTTP_HEADER_ENCODING, exceptions, permissions, renderers, status

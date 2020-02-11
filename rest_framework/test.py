@@ -5,6 +5,7 @@
 from __future__ import unicode_literals
 
 import io
+import six
 from importlib import import_module
 
 from django.conf import settings
@@ -14,7 +15,6 @@ from django.test import override_settings, testcases
 from django.test.client import Client as DjangoClient
 from django.test.client import ClientHandler
 from django.test.client import RequestFactory as DjangoRequestFactory
-from django.utils import six
 from django.utils.encoding import force_bytes
 from django.utils.http import urlencode
 

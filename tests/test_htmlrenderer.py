@@ -2,12 +2,13 @@ from __future__ import unicode_literals
 
 import django.template.loader
 import pytest
+import six
+
 from django.conf.urls import url
 from django.core.exceptions import ImproperlyConfigured, PermissionDenied
 from django.http import Http404
 from django.template import TemplateDoesNotExist, engines
 from django.test import TestCase, override_settings
-from django.utils import six
 
 from rest_framework import status
 from rest_framework.decorators import api_view, renderer_classes

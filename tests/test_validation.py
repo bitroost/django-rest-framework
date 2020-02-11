@@ -1,11 +1,11 @@
 from __future__ import unicode_literals
 
 import re
+import six
 
 from django.core.validators import MaxValueValidator, RegexValidator
 from django.db import models
 from django.test import TestCase
-from django.utils import six
 
 from rest_framework import generics, serializers, status
 from rest_framework.test import APIRequestFactory
